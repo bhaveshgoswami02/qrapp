@@ -15,6 +15,8 @@ import { ScanqrPage } from './scanqr.page';
     IonicModule,
     ScanqrPageRoutingModule
   ],
-  declarations: [ScanqrPage]
+  declarations: [ScanqrPage],
+  providers: [
+  ]
 })
 export class ScanqrPageModule {}

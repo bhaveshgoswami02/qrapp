@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesPage implements OnInit {
   public appPages = [
-    { title: 'Scan QR', url: '/pages/scanqr', icon: 'mail' },
-    { title: 'View QR', url: '/pages/viewqr', icon: 'paper-plane' },
+    { title: 'Scan QR', url: '/pages/scanqr', icon: 'scan' },
+    { title: 'View QR', url: '/pages/viewqr', icon: 'qr-code' },
   ];
 
   constructor() { }
@@ -17,7 +17,7 @@ export class PagesPage implements OnInit {
   }
 
   logout() {
-    
+
   }
 
 }

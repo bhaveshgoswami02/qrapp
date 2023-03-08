@@ -13,8 +13,10 @@ import { ViewqrPage } from './viewqr.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ViewqrPageRoutingModule
+    ViewqrPageRoutingModule,
   ],
-  declarations: [ViewqrPage]
+  declarations: [ViewqrPage],
+  providers: [
+  ]
 })
 export class ViewqrPageModule {}

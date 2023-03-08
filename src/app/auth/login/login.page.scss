@@ -1,0 +1,28 @@
+.login-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-wrapper img {
+    margin-bottom: 32px;
+}
+
+form {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+ion-item {
+    margin-bottom: 16px;
+}
+
+ion-title {
+    font-weight: 700;
+}

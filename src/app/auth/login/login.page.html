@@ -1,9 +1,34 @@
-<ion-header>
+<!-- <ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Log In</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content>
+<ion-content class="ion-padding">
+  <div class="login-wrapper">
+    <ion-row>
+      <ion-col size="12" class="ion-margin-bottom">
+        <ion-title>Login</ion-title>
+      </ion-col>
+    </ion-row>
+    <img src="./assets/images/user.png" alt="Logo">
+    <form [formGroup]="formData" (ngSubmit)="login()">
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" formControlName="email"></ion-input>
+      </ion-item>
+      <field-error [control]="this.formData.controls['email']" [isFormSubmit]="isFormSubmit"></field-error>
+      
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+      <field-error [control]="this.formData.controls['password']" [isFormSubmit]="isFormSubmit"></field-error>
 
+      <ion-button expand="block" shape="round" type="submit">Login</ion-button>
+    </form>
+  </div>
 </ion-content>
